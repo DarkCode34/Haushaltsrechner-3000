@@ -22,27 +22,28 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        CheckedListBox1 = New CheckedListBox()
+        Button1 = New Button()
         SuspendLayout()
         ' 
-        ' CheckedListBox1
+        ' Button1
         ' 
-        CheckedListBox1.FormattingEnabled = True
-        CheckedListBox1.Location = New Point(369, 147)
-        CheckedListBox1.Name = "CheckedListBox1"
-        CheckedListBox1.Size = New Size(150, 114)
-        CheckedListBox1.TabIndex = 0
+        Button1.Location = New Point(336, 128)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 0
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(CheckedListBox1)
+        Controls.Add(Button1)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents CheckedListBox1 As CheckedListBox
+    Friend WithEvents Button1 As Button
 End Class
