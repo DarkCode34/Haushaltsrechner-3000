@@ -22,28 +22,43 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
+        CmdEnd = New Button()
+        LblHauptanzeige = New Label()
         SuspendLayout()
         ' 
-        ' Button1
+        ' CmdEnd
         ' 
-        Button1.Location = New Point(336, 128)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 0
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        CmdEnd.Location = New Point(694, 409)
+        CmdEnd.Name = "CmdEnd"
+        CmdEnd.Size = New Size(94, 29)
+        CmdEnd.TabIndex = 0
+        CmdEnd.Text = "Beenden"
+        CmdEnd.UseVisualStyleBackColor = True
+        ' 
+        ' LblHauptanzeige
+        ' 
+        LblHauptanzeige.AutoSize = True
+        LblHauptanzeige.Font = New Font("Comic Sans MS", 24F, FontStyle.Bold, GraphicsUnit.Point)
+        LblHauptanzeige.Location = New Point(174, 9)
+        LblHauptanzeige.Name = "LblHauptanzeige"
+        LblHauptanzeige.Size = New Size(471, 55)
+        LblHauptanzeige.TabIndex = 1
+        LblHauptanzeige.Text = "Haushaltsrechner 3000"
+        LblHauptanzeige.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(Button1)
+        Controls.Add(LblHauptanzeige)
+        Controls.Add(CmdEnd)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents CmdEnd As Button
+    Friend WithEvents LblHauptanzeige As Label
 End Class
