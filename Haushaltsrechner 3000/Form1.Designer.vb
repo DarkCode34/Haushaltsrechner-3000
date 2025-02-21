@@ -25,6 +25,12 @@ Partial Class Form1
         CmdEnd = New Button()
         LblHauptanzeige = New Label()
         CmdSpeichern = New Button()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        TextBox1 = New TextBox()
+        TextBox2 = New TextBox()
+        TextBox3 = New TextBox()
         SuspendLayout()
         ' 
         ' CmdEnd
@@ -57,11 +63,65 @@ Partial Class Form1
         CmdSpeichern.Text = "Speichern"
         CmdSpeichern.UseVisualStyleBackColor = True
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(13, 64)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(41, 15)
+        Label1.TabIndex = 3
+        Label1.Text = "Label1"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(13, 93)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(41, 15)
+        Label2.TabIndex = 4
+        Label2.Text = "Label2"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(13, 128)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(41, 15)
+        Label3.TabIndex = 5
+        Label3.Text = "Label3"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(69, 65)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(100, 23)
+        TextBox1.TabIndex = 6
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(69, 94)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(100, 23)
+        TextBox2.TabIndex = 7
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Location = New Point(69, 123)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(100, 23)
+        TextBox3.TabIndex = 8
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(700, 338)
+        Controls.Add(TextBox3)
+        Controls.Add(TextBox2)
+        Controls.Add(TextBox1)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
         Controls.Add(CmdSpeichern)
         Controls.Add(LblHauptanzeige)
         Controls.Add(CmdEnd)
@@ -75,4 +135,10 @@ Partial Class Form1
     Friend WithEvents CmdEnd As Button
     Friend WithEvents LblHauptanzeige As Label
     Friend WithEvents CmdSpeichern As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
 End Class
