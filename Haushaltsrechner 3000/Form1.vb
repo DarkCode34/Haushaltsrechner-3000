@@ -6,4 +6,8 @@
     Private Sub LblHauptanzeige_Click(sender As Object, e As EventArgs) Handles LblHauptanzeige.Click
 
     End Sub
+
+    Private Sub CmdSpeichern_Click(sender As Object, e As EventArgs) Handles CmdSpeichern.Click
+        MsgBox("hihi, hier kommt die speicherfunktion hin")
+    End Sub
 End Class

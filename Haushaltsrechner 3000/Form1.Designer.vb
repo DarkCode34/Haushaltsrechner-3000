@@ -24,13 +24,15 @@ Partial Class Form1
     Private Sub InitializeComponent()
         CmdEnd = New Button()
         LblHauptanzeige = New Label()
+        CmdSpeichern = New Button()
         SuspendLayout()
         ' 
         ' CmdEnd
         ' 
-        CmdEnd.Location = New Point(694, 409)
+        CmdEnd.Location = New Point(607, 307)
+        CmdEnd.Margin = New Padding(3, 2, 3, 2)
         CmdEnd.Name = "CmdEnd"
-        CmdEnd.Size = New Size(94, 29)
+        CmdEnd.Size = New Size(82, 22)
         CmdEnd.TabIndex = 0
         CmdEnd.Text = "Beenden"
         CmdEnd.UseVisualStyleBackColor = True
@@ -38,21 +40,32 @@ Partial Class Form1
         ' LblHauptanzeige
         ' 
         LblHauptanzeige.AutoSize = True
-        LblHauptanzeige.Font = New Font("Comic Sans MS", 24F, FontStyle.Bold, GraphicsUnit.Point)
-        LblHauptanzeige.Location = New Point(174, 9)
+        LblHauptanzeige.Font = New Font("Comic Sans MS", 24F, FontStyle.Bold)
+        LblHauptanzeige.Location = New Point(152, 7)
         LblHauptanzeige.Name = "LblHauptanzeige"
-        LblHauptanzeige.Size = New Size(471, 55)
+        LblHauptanzeige.Size = New Size(383, 45)
         LblHauptanzeige.TabIndex = 1
         LblHauptanzeige.Text = "Haushaltsrechner 3000"
         LblHauptanzeige.TextAlign = ContentAlignment.MiddleCenter
         ' 
+        ' CmdSpeichern
+        ' 
+        CmdSpeichern.Location = New Point(8, 308)
+        CmdSpeichern.Name = "CmdSpeichern"
+        CmdSpeichern.Size = New Size(75, 23)
+        CmdSpeichern.TabIndex = 2
+        CmdSpeichern.Text = "Speichern"
+        CmdSpeichern.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(700, 338)
+        Controls.Add(CmdSpeichern)
         Controls.Add(LblHauptanzeige)
         Controls.Add(CmdEnd)
+        Margin = New Padding(3, 2, 3, 2)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
@@ -61,4 +74,5 @@ Partial Class Form1
 
     Friend WithEvents CmdEnd As Button
     Friend WithEvents LblHauptanzeige As Label
+    Friend WithEvents CmdSpeichern As Button
 End Class
